@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <h3>//Q1.Find the Product.</h3>
+    // Write a program that takes an array as input from the user and find out the product of the elements.
+
+Note: You have to complete Find_Prod. No need to take any input. <br> <br>
+
+ * const Find_Prod = (array, N) =>  <br>
+{ <br>
+ let result = 1; <br>
+        for (let i = 0; i < N; i++) <br>
+            result = result * array[i]; <br>
+        return result; <br>
+};<br>
+
+<h3>//Q2 Find the Sum.</h3>
+// Write a program which takes an array as input from the user and find out the sum of the array elements.
+
+Note: You have to complete Find_Sum. No need to take any input. <br> <br>
+
+* const Find_Sum = (array, N) =>  <br>
+{ <br>
+let sum = 0;  <br>
+for (let i = 0; i < array.length; i++)  <br>
+    sum += array[i];  <br>
+    return sum; <br>
+}; <br>
+
+<h3>//Q3 Count Occurrences.</h3>
+// You are given an array A containing N integer elements and an integer K,and 
+your task is to return the count of occurrences of K in array A.
+Note: You have to complete findCount function. No need to take any input. <br> <br>
+
+ * const findCount = (N, K, Arr) =>  <br>
+{ <br>
+    var count=0; <br>
+    for(let i=0;i< Arr.length;i++){ <br>
+    if(Arr[i]==K){  <br>
+    count++;  <br>
+    } <br>
+    } <br>
+return count; <br>
+}; <br>
+
+<h3>//Q4 Even Odd.</h3>
+//
+You are given an array 
+A
+ containing 
+N
+ integer elements, and your task is to return an array 
+B
+ 
+(
+having a size equal to 
+2
+)
+, where 
+B
+[
+0
+]
+ contains the sum of all even elements of array A and 
+B
+[
+1
+]
+ has the sum of all odd elements of the array 
+A
+.
+
+Note: You have to complete findEvenOdd function. No need to take any input. <br> <br>
+* const findEvenOdd = (N, Arr) =>  <br>
+{ <br>
+    let array=[0,0]; <br>
+    for(let i=0;i< N;i++){ <br>
+    if(Arr[i]%2===0){ <br>
+        array[0]+=Arr[i]; <br>
+    } <br>
+    else{ <br>
+        array[1]+=Arr[i]; <br>
+    } <br>
+    } <br>
+    return array; <br>
+}; <br>
+
+
+
+
+</body>
+</html>
